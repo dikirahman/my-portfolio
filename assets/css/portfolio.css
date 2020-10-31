@@ -1,15 +1,39 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 :root {
   font-size: 16px;
+  --body-font: 'Poppins', sans-serif;
   --bg-primary: #25294C;
   --bg-secondary: #283058;
   --text-primary: #CDCFE6;
   --text-secondary: #F75165;
+  --color-danger: #F75165;
+  --color-primary: #4D7CFC;
+  --color-secondary: #7032FF;
+  
+  /*=== margin ===*/
+  --m-2: .5rem;
+  --m-4: 1rem;
+  --m-6: 1.5rem;
+  --m-8: 2rem;
+  
+  /*=== Font Weight ===*/
+  --normal: 200;
+  --semi: 400;
+  --bold: 600;
 }
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
+  font-family: var(--body-font);
   margin: 0;
   padding: 0;
+}
+.container {
+  margin: 1rem;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 /*=== Theme Dark ===*/
@@ -28,18 +52,86 @@ body {
   --text-secondary: #5C5D5E;
 }
 
+/*=== Color ===*/
+/*== Background ==*/
+.bg-danger {
+  background: var(--color-danger);
+  color: #FFF;
+}
+.bg-primary {
+  background: var(--color-primary);
+  color: #FFF;
+}
+.bg-secondary {
+  background: var(--color-secondary);
+}
+/*== Text ==*/
+.text-danger {
+  color: var(--color-danger);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+
 /*=== Portfolio ===*/
 .portfolio {
   display: flex;
 }
 /*=== Skill ===*/
-.skill {
+.skills {
   background: var(--bg-primary);
   height: 100vh;
   width: 25vw;
 }
-/*=== profil ===*/
-.profil {
+.skills h2 {
+  color: var(--text-primary);
+}
+.skill__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill__card {
+  width: 100vw;
+  height: 3rem;
+  border-radius: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 .7rem;
+  font-weight: var(--bold);
+  margin: .5rem 0;
+  background: var(--bg-secondary);
+}
+.skill__name {
+  display: flex;
+  align-items: center;
+}
+.skill__icon {
+  color: var(--color-danger);
+  font-size: 1.5rem;
+  margin-right: .3rem;
+}
+.skill__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--color-danger);
+  height: .25rem;
+  border-bottom-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+}
+.skill__html {
+  width: 95%;
+}
+/*=== profile ===*/
+.profile {
   background: var(--bg-secondary);
   height: 100vh;
   width: 40vw;
@@ -58,12 +150,12 @@ body {
     flex-direction: column;
   }
   /*=== Skill ===*/
-  .skill {
+  .skills {
     width: 100vw;
     order: 2;
   }
-  /*=== Profil ===*/
-  .profil {
+  /*=== Profile ===*/
+  .profile {
     width: 100vw;
     order: 1;
   }
@@ -75,63 +167,8 @@ body {
 }
 
 /*=== Tablet ===*/
+/*
 @media screen and(max-width: 768px) {
   
-}
-
-
-
-
-
-/*
-.nav-link {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  color: var(--text-primary);
-  text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
-}
-
-.nav-link:hover {
-  filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-}
-
-.link-text {
-  display: none;
-  margin-left: 1rem;
-}
-.nav-link svg {
-  width: 2rem;
-  min-width: 2rem;
-  margin: 0 1.5rem;
-}
-
-.fa-primary {
-  color: #ff7eee;
-}
-
-.fa-secondary {
-  color: #df49a6;
-}
-
-.fa-primary,
-.fa-secondary {
-  transition: var(--transition-speed);
-}
-
-.theme-icon {
-  display: none;
-}
-
-.dark #darkIcon {
-  display: block;
-}
-
-.light #lightIcon {
-  display: block;
 }
 */
