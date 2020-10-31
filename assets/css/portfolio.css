@@ -1,0 +1,142 @@
+:root {
+  font-size: 16px;
+  --bg-primary: #25294C;
+  --bg-secondary: #283058;
+  --text-primary: #7032FF;
+  --text-secondary: #F75165;
+}
+body {
+  background: var(--bg-primary);
+  color: #302C2E;
+  margin: 0;
+  padding: 0;
+}
+
+/*=== Theme Dark ===*/
+.dark {
+  --bg-primary: #25294C;
+  --bg-secondary: #283058;
+  --text-primary: #7032FF;
+  --text-secondary: #F75165;
+}
+
+/*=== Theme Light ===*/
+.light {
+  --bg-primary: #FFF;
+  --bg-secondary: #FFF;
+  --text-primary: #404047;
+  --text-secondary: #F75165;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/*=== Portfolio ===*/
+.portfolio {
+  display: flex;
+}
+/*=== Skill ===*/
+.skill {
+  background: red;
+  height: 95vh;
+  width: 25vw;
+}
+/*=== profil ===*/
+.profil {
+  background: green;
+  height: 95vh;
+  width: 40vw;
+}
+/*=== Project ===*/
+.project {
+  background: blue;
+  height: 95vh;
+  width: 35vw;
+}
+/*=== Footer ===*/
+.footer {
+  height: 5vh;
+  background: purple;
+  width: 100vw;
+}
+
+/*=== Mobile ===*/ 
+@media screen and (max-width: 576px) {
+  /*=== Portfolio ===*/
+  .portfolio {
+    flex-direction: column;
+  }
+  /*=== Skill ===*/
+  .skill {
+    width: 100vw;
+    order: 2;
+  }
+  /*=== Profil ===*/
+  .profil {
+    width: 100vw;
+    order: 1;
+  }
+  /*=== Project ===*/
+  .project {
+    width: 100vw;
+    order: 3;
+  }
+}
+
+
+
+
+
+
+/*
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+*/
