@@ -2,12 +2,12 @@
   font-size: 16px;
   --bg-primary: #25294C;
   --bg-secondary: #283058;
-  --text-primary: #7032FF;
+  --text-primary: #CDCFE6;
   --text-secondary: #F75165;
 }
 body {
   background: var(--bg-primary);
-  color: #302C2E;
+  color: var(--text-primary);
   margin: 0;
   padding: 0;
 }
@@ -16,7 +16,7 @@ body {
 .dark {
   --bg-primary: #25294C;
   --bg-secondary: #283058;
-  --text-primary: #7032FF;
+  --text-primary: #CDCFE6;
   --text-secondary: #F75165;
 }
 
@@ -25,10 +25,7 @@ body {
   --bg-primary: #FFF;
   --bg-secondary: #FFF;
   --text-primary: #404047;
-  --text-secondary: #F75165;
-}
-.shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  --text-secondary: #5C5D5E;
 }
 
 /*=== Portfolio ===*/
@@ -37,27 +34,21 @@ body {
 }
 /*=== Skill ===*/
 .skill {
-  background: red;
-  height: 95vh;
+  background: var(--bg-primary);
+  height: 100vh;
   width: 25vw;
 }
 /*=== profil ===*/
 .profil {
-  background: green;
-  height: 95vh;
+  background: var(--bg-secondary);
+  height: 100vh;
   width: 40vw;
 }
 /*=== Project ===*/
 .project {
-  background: blue;
-  height: 95vh;
+  background: var(--bg-primary);
+  height: 100vh;
   width: 35vw;
-}
-/*=== Footer ===*/
-.footer {
-  height: 5vh;
-  background: purple;
-  width: 100vw;
 }
 
 /*=== Mobile ===*/ 
@@ -83,6 +74,10 @@ body {
   }
 }
 
+/*=== Tablet ===*/
+@media screen and(max-width: 768px) {
+  
+}
 
 
 
