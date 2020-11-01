@@ -89,6 +89,9 @@ body {
 .skills h2 {
   color: var(--text-primary);
 }
+.skills p {
+  font-size: .8rem;
+}
 .skill__list {
   display: flex;
   justify-content: center;
@@ -97,7 +100,7 @@ body {
 }
 .skill__card {
   width: 100vw;
-  height: 3rem;
+  height: 2.5rem;
   border-radius: .2rem;
   display: flex;
   align-items: center;
@@ -107,6 +110,7 @@ body {
   font-weight: var(--bold);
   margin: .5rem 0;
   background: var(--bg-secondary);
+  font-size: .8rem;
 }
 .skill__name {
   display: flex;
@@ -130,11 +134,73 @@ body {
 .skill__html {
   width: 95%;
 }
+.skill__css {
+  width: 65%;
+}
+.skill__javascript {
+  width: 5%;
+}
+.skill__bootstrap {
+  width: 70%;
+}
+.skill__sass {
+  width: 10%;
+}
+.skill__ux {
+  width: 45%;
+}
 /*=== profile ===*/
 .profile {
   background: var(--bg-secondary);
   height: 100vh;
   width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.menu__item {
+  width: 100%;
+}
+.menu__link {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 300ms;
+}
+
+.menu__link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+.menu__link svg {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  margin: 0 1.5rem;
+}
+.menu__theme__icon {
+  display: none;
+}
+.dark #darkIcon {
+  display: block;
+}
+.light #lightIcon {
+  display: block;
 }
 /*=== Project ===*/
 .project {
@@ -152,19 +218,31 @@ body {
   /*=== Skill ===*/
   .skills {
     width: 100vw;
+    height: auto;
     order: 2;
+  }
+  .skill__card {
+    height: 3rem;
   }
   /*=== Profile ===*/
   .profile {
     width: 100vw;
+    height: auto;
     order: 1;
+  }
+  .menu {
+    position: fixed;
+    background: var(--bg-secondary);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
   /*=== Project ===*/
   .project {
     width: 100vw;
+    height: auto;
     order: 3;
   }
 }
+
 
 /*=== Tablet ===*/
 /*
