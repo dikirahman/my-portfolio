@@ -7,7 +7,7 @@
   --bg-primary: #25294C;
   --bg-secondary: #283058;
   --text-primary: #CDCFE6;
-  --text-secondary: #F75165;
+  --text-secondary: #FFF;
   --color-danger: #F75165;
   --color-primary: #4D7CFC;
   --color-secondary: #7032FF;
@@ -101,7 +101,7 @@ body {
   flex-wrap: wrap;
 }
 .skill__card {
-  width: 100vw;
+  width: 22vw;
   height: 2.5rem;
   border-radius: .2rem;
   display: flex;
@@ -223,6 +223,7 @@ body {
     order: 2;
   }
   .skill__card {
+    width: 100vw;
     height: 3rem;
   }
   /*=== Profile ===*/
