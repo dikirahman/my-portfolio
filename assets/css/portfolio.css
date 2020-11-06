@@ -87,7 +87,6 @@ body {
   background: var(--bg-primary);
   height: 100vh;
   width: 25vw;
-  border: 2px solid red;
 }
 .skills h2 {
   color: var(--text-secondary);
@@ -103,7 +102,7 @@ body {
   flex-direction: column;
 }
 .skill__card {
-  width: 22vw;
+  width: 20vw;
   height: 2.5rem;
   border-radius: .2rem;
   display: flex;
@@ -191,10 +190,10 @@ body {
   color: var(--text-primary);
 }
 .menu__link svg, .menu__link i {
-  width: 1.5rem;
-  min-width: 1.5rem;
-  margin: 0 1.5rem;
-  font-size: 1.7rem;
+  width: 1.1rem;
+  min-width: 1.1rem;
+  margin: 0 2rem;
+  font-size: 1.5rem;
 }
 .menu__theme__icon {
   display: none;
@@ -204,6 +203,36 @@ body {
 }
 .light #lightIcon {
   display: block;
+}
+
+.about__me {
+  margin: .5rem 1rem;
+}
+.about__header {
+  color: var(--text-secondary);
+}
+.about__body {
+  display: flex;
+}
+.about__img img {
+  width: 8rem;
+  height: 8.3rem;
+  border: .1rem solid rgba(250,250,250, .2);
+  border-radius: .1rem;
+}
+.about__deskription {
+  flex: 2;
+  margin: 0 1rem;
+}
+.about__name {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+.about__age {
+  font-size: .7rem;
+}
+.about__born {
+  font-size: .9rem;
 }
 /*=== Project ===*/
 .project {
@@ -225,7 +254,7 @@ body {
     order: 2;
   }
   .skill__card {
-    width: 100vw;
+    width: 80vw;
     height: 3rem;
   }
   /*=== Profile ===*/
@@ -252,6 +281,10 @@ body {
     min-width: 1.2rem;
     margin: 0 1.2rem;
     font-size: 1.7rem;
+  }
+  
+  .about__me {
+    margin: 15vh 1rem;
   }
   /*=== Project ===*/
   .project {
