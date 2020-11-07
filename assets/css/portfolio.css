@@ -348,6 +348,11 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     border-radius: .2rem;
   }
+  .project__header {
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    height: 2rem;
+  }
 }
 
 
