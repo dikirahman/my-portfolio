@@ -46,6 +46,9 @@ body {
   --text-secondary: #FFF;
   --color-transparant-2: rgba(100,100,150, .2);
   --color-transparant-3: rgba(100,100,100, .3);
+  --color-transparant-1: rgba(250,250,3
+  250, .1);
+  
 }
 
 /*=== Theme Light ===*/
@@ -56,7 +59,9 @@ body {
   --text-secondary: #252525;
   --color-transparant-2: rgba(0,0,0, .1);
   --color-transparant-3: rgba(0,0,0, .3);
+  --color-transparant-1: rgba(0,0,0, .1);
 }
+
 
 /*=== Color ===*/
 /*== Background ==*/
@@ -230,7 +235,7 @@ body {
   margin: 0 1rem;
 }
 .about__name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
 }
 .about__name span {
@@ -261,25 +266,53 @@ body {
   width: 35vw;
   position: relative;
 }
-.project__card {
-  height: 95vh;
+.project__bg {
   background: var(--bg-primary);
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 95vh;
   border-top-left-radius: 2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  display: flex;
+  flex-direction: column;
 }
 .project__header {
   left: 0;
   right: 0;
-  height: 4.7rem;
-  position: absolute;
+  height: 3.5rem;
   top: 0;
   border-top-left-radius: 2rem;
   padding: 0 2rem;
+  display: flex;
+  align-items: center;
   background: var(--color-transparant-2);
+}
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+.project__card {
+  width: 45%;
+  height: 4rem;
+  background: var(--bg-secondary);
+  border-radius: .2rem;
+  color: var(--text-primary);
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.1) !important;
+  display: flex;
+  position: relative;
+  margin: .4rem 0;
+}
+.project__img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 4rem;
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
 }
 
 /*=== Mobile ===*/ 
@@ -311,6 +344,7 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     right: 0;
     border-bottom-left-radius: 10px;
+    z-index: 99;
   }
   .menu__link {
     height: 2.7rem;
@@ -340,8 +374,7 @@ body {
     display: flex;
     justify-content: center;
   }
-  .project__card {
-    height: 80vh;
+  .project__bg {
     width: 90vw;
     position: relative;
     margin: 1rem 0;
@@ -352,6 +385,16 @@ body {
     border-top-left-radius: .2rem;
     border-top-right-radius: .2rem;
     height: 2rem;
+  }
+  .project__header h2 {
+    font-size: 1rem;
+  }
+  .project__card {
+    height: 7rem;
+    width: 90%;
+  }
+  .project__card img  {
+    height: 7rem;
   }
 }
 
