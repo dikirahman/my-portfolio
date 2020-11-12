@@ -11,7 +11,8 @@
   --color-danger: #F75165;
   --color-primary: #4D7CFC;
   --color-secondary: #7032FF;
-
+  --color-warning: #EBC000;
+  --color-dark: #25294C;
   
   /*=== margin ===*/
   --m-2: .5rem;
@@ -31,11 +32,24 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 .container {
   margin: 1rem;
 }
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.btn {
+  background: var(--color-warning);
+  color: var(--color-dark);
+  padding: .1em .7em;
+  margin: .5em;
+  border-radius: .2rem;
+}
+.btn-sm {
+  font-size: .7em;
 }
 
 /*=== Theme Dark ===*/
@@ -296,23 +310,33 @@ body {
   padding: 1rem 0;
 }
 .project__card {
-  width: 45%;
-  height: 4rem;
+  width: 90%;
+  height: 5rem;
   background: var(--bg-secondary);
   border-radius: .2rem;
   color: var(--text-primary);
-  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1) !important;
   display: flex;
   position: relative;
   margin: .4rem 0;
 }
 .project__img img {
-  position: absolute;
   top: 0;
   bottom: 0;
-  height: 4rem;
+  height: 5rem;
   border-top-left-radius: .2rem;
   border-bottom-left-radius: .2rem;
+}
+.project__deskription {
+  padding: 0 .8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.project__name {
+  font-weight: var(--bold);
+  font-size: 1rem;
 }
 
 /*=== Mobile ===*/ 
@@ -376,18 +400,16 @@ body {
   }
   .project__bg {
     width: 90vw;
+    height: auto;
     position: relative;
     margin: 1rem 0;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15) !important;
     border-radius: .2rem;
   }
   .project__header {
     border-top-left-radius: .2rem;
     border-top-right-radius: .2rem;
-    height: 2rem;
-  }
-  .project__header h2 {
-    font-size: 1rem;
+    height: 3rem;
   }
   .project__card {
     height: 7rem;
@@ -396,12 +418,18 @@ body {
   .project__card img  {
     height: 7rem;
   }
+  .project__name {
+    font-size: 1rem;
+  }
 }
 
 
 /*=== Tablet ===*/
-/*
+
 @media screen and(max-width: 768px) {
   
+  /*=== Project ===*/
+  .project__bg {
+    height: auto;
+  }
 }
-*/
